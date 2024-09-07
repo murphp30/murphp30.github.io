@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Pearse Murphy - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/8557cc7174.js" crossorigin="anonymous"></script>
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+        .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+        }
+    </style>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+            <a href="publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+            <a href="CV.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Portfolio</a>
+        </div>
+        </div>
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Menu</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="publications.html">Publications</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="CV.html">CV</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="portfolio.html">Portfolio</a>
+        </nav>
+        
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left:250px">
+            <div class="w3-row w3-padding-64">
+                <div class="w3-col w3-container">
+                    <h1 class="w3-text-teal">Pearse's Portfolio Page</h1>
+                    <p>
+                        Hello and welcome to my portfolio.
+                        This haphazard collection of links is an example of 
+                        things that I'm currently working on to some degree or
+                        other. A strong warning that everything is in some state
+                        of "work in progress".
+                    </p>
+                    <h4 class="w3-text-teal">
+                        <a href="diplo_country_assign.html">Diplomacy Country Assignment</a>
+                    </h4>
+                    <p>Inspired by setting up games of 
+                        <a href="https://en.wikipedia.org/wiki/Diplomacy_(game)">Diplomacy</a>
+                        with friends, I wrote a python program to anonymously assign
+                        a country to each player. This page is web form version of that script,
+                        which lives <a href="https://github.com/murphp30/diplomacy/">on my github here</a>.
+                        I'm terrified that the anonymous email functionality will get abused if I put it
+                        on the web so for now it's just for randomising people.
+                    </p>
+
+                    <h4 class="w3-text-teal">
+                        <a href="https://mastodon.ie/@BirdsAsGaeilge">Birds as Gaeilge</a>
+                    </h4>
+                    <p>
+                        I wrote a mastodon bot to post the names of birds in English and Irish.
+                        The bot takes a random entry from Colm Ó Caomhánaigh's
+                        <a href="http://gofree.indigo.ie/~cocaomh/HomePage.htm"> Dictionary of Bird Names in Irish</a>, 
+                        finds its Wikipedia entry and posts the name of the bird in English, Irish and Latin to Mastodon
+                        along with the main image from Wikipedia. The <a href="https://github.com/murphp30/birds_as_gaeilge">script</a>
+                        used to run once a day off a chronjob on my
+                        laptop, I may start it up again in the future.
+                    </p>
+
+                    <h4 class="w3-text-teal">
+                        <a href="https://github.com/murphp30/pop_density">Population Density of Ireland</a>
+                    </h4>
+                    <p>
+                        There was a post on reddit.com/r/ireland where someone had taken
+                        <a href="https://ec.europa.eu/eurostat/">Eurostat data</a> and plotted the 
+                        population density on the island of Ireland as a Joy Division 
+                        (<a href="https://en.wikipedia.org/wiki/Unknown_Pleasures#Artwork_and_packaging">crab nebula pulsar</a>)
+                        ridgeline plot. Arguments in the comments made me think "I can do better than that", so I did.
+                        Fortunately, I lost interest before engaging in an argument online.
+                    </p>
+
+                    <h4 class="w3-text-teal">
+                        <a href="publications.html">Other Professional Projects</a>
+                    </h4>
+                    <p>
+                        For projects undertaken in my professional scientific career,
+                        check out my <a href="publications.html">publications</a>!
+                    </p>
+                </div>
+            </div>
+            
+            <footer id="myFooter">
+            <div class="w3-container w3-theme-l2 w3-padding-16">
+                <a href="https://mastodon.dias.ie/@murphp30" class="fab fa-mastodon" style="font-size:30px;text-decoration:none"></a>
+                <a href="https://github.com/murphp30" class="fab fa-github" style="font-size:30px;text-decoration:none"></a>
+            </div>
+        
+            <div class="w3-container w3-theme-l1">
+                <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </div>
+            
+            </footer>
+            
+        <!-- END MAIN -->
+        </div>
+    
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+            
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+            
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+              if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+              } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+              }
+            }
+            
+            // Close the sidebar with the close button
+            function w3_close() {
+              mySidebar.style.display = "none";
+              overlayBg.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
