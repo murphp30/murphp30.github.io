@@ -1,0 +1,17 @@
+.diplo-table th {
+	width: 100px;
+	padding-left: 0px;
+    padding-right: 0px;
+	text-align: center;
+/* 	border: 1px solid #ffffff; */
+}
+
+.diplo-table td {
+	padding-left: 15px;
+  padding-right: 15px;
+	text-align: center;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
